@@ -1,4 +1,6 @@
 #include<math.l>
-vid main()
+void main()
 {
+char grid[3][3];
 }
+

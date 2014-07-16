@@ -1,4 +1,4 @@
-<?
+<?php
 $table = array
 (
 array(1, 2, 3),

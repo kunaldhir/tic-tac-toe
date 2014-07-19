@@ -1,7 +1,6 @@
 <?php
 session_start();
 $_SESSION['table']=$table;
-$_SESSION['input1']=$input1;
 $table = array
 (
 array(1, 2, 3),
@@ -31,7 +30,7 @@ $table[1][1] = "O";
 }
 elseif ($input1 == 2){
 $table[0][1] = "X";
-$table[2][0] = "O";
+$table[1][1] = "O";
 }
 elseif ($input1 == 3){
 $table[0][2] = "X";

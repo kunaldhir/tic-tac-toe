@@ -2,6 +2,5 @@ tic-tac-toe
 ===========
 the tic tac toe game in php (user versus computer)
 
-To play
-You need to host the source.php file on a server.
+To play you need to host all the .php files on a server.
 

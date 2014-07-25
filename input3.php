@@ -344,7 +344,7 @@ if(isset($_POST['submit'])&& $input2<10){
 
 	elseif($table[0][2] == "X" && $table[1][2] == "X" && $input3 == 1){
 		$table[0][0] = "X";
-		$table[2][1] = "O";}
+		$table[0][1] = "O";}
 
 	//**************************Computer wins X = (3,6)***********************************
 	elseif($table[0][2] == "X" && $table[1][2] == "X" && $input3 == 2){

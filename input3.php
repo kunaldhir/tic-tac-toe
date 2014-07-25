@@ -21,13 +21,11 @@ $input3=$_POST['input3'];
 if(isset($_POST['submit'])&& $input2<10){
 	
 	if($table[0][0] == "X" && $table[0][1] == "X" && $input3 == 7){
-
 		$table[2][0] = "X";
-		$table[1][2] = "O";}
+		$table[1][0] = "O";}
 	
 	//**************************Computer wins X = (1,2)***********************************
 	elseif($table[0][0] == "X" && $table[0][1] == "X" && $input3 == 4){
-
 		$table[1][0] = "X";
 		$table[2][0] = "O";
         echo '<script>alert("Computer wins");</script>';}
@@ -668,7 +666,7 @@ if(isset($_POST['submit'])&& $input2<10){
 
 	elseif($table[1][2] == "X" && $table[2][1] == "X" && $input3 == 9){
 		$table[2][2] = "X";
-		$table[0][1] = "O";
+		$table[0][1] = "O";}
 
 	//**************************Computer wins X = (6,8)***********************************
 	elseif($table[1][2] == "X" && $table[2][1] == "X" && $input3 == 2){
@@ -689,9 +687,9 @@ if(isset($_POST['submit'])&& $input2<10){
 		echo '<script>alert("Computer wins");</script>';}
 	//************************************************************************************
 
-	$table[1][2] == "X" && $table[2][2] == "X" && $input3 == 2){
+	elseif($table[1][2] == "X" && $table[2][2] == "X" && $input3 == 2){
 		$table[0][1] = "X";
-		$table[2][0] = "O";
+		$table[2][0] = "O";}
 
 	//**************************Computer wins X = (6,9)***********************************
 	elseif($table[1][2] == "X" && $table[2][2] == "X" && $input3 == 4){
@@ -785,7 +783,7 @@ echo '<script>window.location="http://localhost/input4.php"</script>';
 
 
 }
-elseif($input1>9) {
+elseif($input3>9) {
 	echo"Type in a valid number.";
 }
 $_SESSION['table']=$table;

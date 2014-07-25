@@ -160,7 +160,7 @@ if(isset($_POST['submit'])&& $input2<10){
 
 	elseif($table[0][0] == "X" && $table[2][2] == "X" && $input3 == 4){
 		$table[1][0] = "X";
-		$table[0][1] = "O";}
+		$table[2][0] = "O";}
 
 	//**************************Computer wins X = (1,9)***********************************
 	elseif($table[0][0] == "X" && $table[2][2] == "X" && $input3 == 2){
@@ -227,8 +227,8 @@ if(isset($_POST['submit'])&& $input2<10){
 		echo '<script>alert("Computer wins");</script>';}
 	//************************************************************************************
 	
-	elseif($table[0][1] == "X" && $table[1][2] == "X" && $input3 == 9){
-		$table[2][2] = "X";
+	elseif($table[0][1] == "X" && $table[1][2] == "X" && $input3 == 1){
+		$table[0][0] = "X";
 		$table[0][2] = "O";}
 	
 	//**************************Computer wins X = (2,6)***********************************

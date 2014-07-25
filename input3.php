@@ -779,12 +779,12 @@ if(isset($_POST['submit'])&& $input2<10){
 		echo '<script>alert("Computer wins");</script>';}
 	//************************************************************************************
 
-echo '<script>window.location="http://localhost/input4.php"</script>';
+else {
+	echo'<script>alert("Type in a valid number");window.location.reload()"</script>';
+	}
 
+	echo '<script>window.location="http://localhost/input4.php"</script>';
+}
 
-}
-elseif($input3>9) {
-	echo"Type in a valid number.";
-}
 $_SESSION['table']=$table;
 ?>

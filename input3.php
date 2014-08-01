@@ -641,55 +641,55 @@ if(isset($_POST['submit'])&& $input2<10){
 		echo '<script>alert("Computer wins");</script>';}
 	//************************************************************************************
 
-	elseif($table[1][2] == "X" && $table[2][1] == "X" && $input3 == 9){
-		$table[2][2] = "X";
-		$table[0][1] = "O";}
+	elseif($table[1][2] == "X" && $table[2][1] == "X" && $input3 == 1){
+		$table[0][0] = "X";
+		$table[0][2] = "O";}
 
 	//**************************Computer wins X = (6,8)***********************************
 	elseif($table[1][2] == "X" && $table[2][1] == "X" && $input3 == 2){
 		$table[0][1] = "X";
-		$table[2][2] = "O";
+		$table[0][0] = "O";
 		echo '<script>alert("Computer wins");</script>';}
 	elseif($table[1][2] == "X" && $table[2][1] == "X" && $input3 == 3){
 		$table[0][2] = "X";
-		$table[2][2] = "O";
+		$table[0][0] = "O";
 		echo '<script>alert("Computer wins");</script>';}
 	elseif($table[1][2] == "X" && $table[2][1] == "X" && $input3 == 4){
 		$table[1][0] = "X";
-		$table[2][2] = "O";
+		$table[0][0] = "O";
 		echo '<script>alert("Computer wins");</script>';}
-	elseif($table[1][2] == "X" && $table[2][1] == "X" && $input3 == 9){
-		$table[2][2] = "X";
-		$table[2][2] = "O";
+	elseif($table[1][2] == "X" && $table[2][1] == "X" && $input3 == 7){
+		$table[2][0] = "X";
+		$table[0][0] = "O";
 		echo '<script>alert("Computer wins");</script>';}
 	//************************************************************************************
 
-	elseif($table[1][2] == "X" && $table[2][2] == "X" && $input3 == 2){
-		$table[0][1] = "X";
-		$table[2][0] = "O";}
+	elseif($table[1][2] == "X" && $table[2][2] == "X" && $input3 == 7){
+		$table[2][0] = "X";
+		$table[2][1] = "O";}
 
 	//**************************Computer wins X = (6,9)***********************************
 	elseif($table[1][2] == "X" && $table[2][2] == "X" && $input3 == 4){
 		$table[1][0] = "X";
-		$table[0][1] = "O";
+		$table[2][0] = "O";
 		echo '<script>alert("Computer wins");</script>';}
-	elseif($table[1][2] == "X" && $table[2][2] == "X" && $input3 == 5){
-		$table[1][1] = "X";
-		$table[0][1] = "O";
+	elseif($table[1][2] == "X" && $table[2][2] == "X" && $input3 == 1){
+		$table[0][0] = "X";
+		$table[2][0] = "O";
 		echo '<script>alert("Computer wins");</script>';}
-	elseif($table[1][2] == "X" && $table[2][2] == "X" && $input3 == 7){
-		$table[2][0] = "X";
-		$table[0][1] = "O";
+	elseif($table[1][2] == "X" && $table[2][2] == "X" && $input3 == 2){
+		$table[0][0] = "X";
+		$table[2][0] = "O";
 		echo '<script>alert("Computer wins");</script>';}
 	elseif($table[1][2] == "X" && $table[2][2] == "X" && $input3 == 8){
 		$table[2][1] = "X";
-		$table[0][1] = "O";
+		$table[2][0] = "O";
 		echo '<script>alert("Computer wins");</script>';}
 	//************************************************************************************
 
 	elseif ($table[2][0] == "X" && $table[2][1] == "X" && $input3 == 1){
 		$table[0][0] = "X";
-		$table[1][2] = "O";}
+		$table[1][0] = "O";}
 
 	//**************************Computer wins X = (7,8)***********************************
 	elseif ($table[2][0] == "X" && $table[2][1] == "X" && $input3 == 2){
@@ -734,10 +734,10 @@ if(isset($_POST['submit'])&& $input2<10){
 	//************************************************************************************
 
 	elseif ($table[2][1] == "X" && $table[2][2] == "X" && $input3 == 4){
-		$table[2][0] = "X";
+		$table[1][0] = "X";
 		$table[0][2] = "O";}
 
-	//**************************Computer wins X = (7,9)***********************************
+	//**************************Computer wins X = (8,9)***********************************
 	elseif ($table[2][1] == "X" && $table[2][2] == "X" && $input3 == 2){
 		$table[0][1] = "X";
 		$table[1][0] = "O";

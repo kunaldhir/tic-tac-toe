@@ -38,7 +38,7 @@ $table[1][1] = "O";
 }
 elseif ($input1 == 4){
 $table[1][0] = "X";
-$table[0][2] = "O";
+$table[1][1] = "O";
 }
 elseif ($input1 == 5){
 $table[1][1] = "X";
@@ -46,7 +46,7 @@ $table[0][0] = "O";
 }
 elseif ($input1 == 6){
 $table[1][2] = "X";
-$table[0][0] = "O";
+$table[1][1] = "O";
 }
 elseif ($input1 == 7){
 $table[2][0] = "X";

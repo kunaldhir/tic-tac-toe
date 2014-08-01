@@ -1,6 +1,6 @@
 <?php
-
 session_start();
+error_reporting(E_ERROR | E_PARSE);
 $table=$_SESSION['table'];
 
 echo $table[0][0]."&nbsp;&nbsp;&nbsp;&nbsp;".$table[0][1]."&nbsp;&nbsp;&nbsp;&nbsp;".$table[0][2]."<br>"."<br>";
@@ -21,17 +21,17 @@ $input4=$_POST['input4'];
 
 if(isset($_POST['submit'])&& $input3<10){
 	
-	if($table[0][0] == "X" && $table[0][1] == "X" && $table[1][2] =="X" && $input4 == 6){
+	if($table[0][0] == "X" && $table[0][1] == "X" && $table[2][0] == "X" && $input4 == 6){
 		$table[1][2] = "X";
 		$table[2][2] = "O";
 		echo '<script>alert("Match Drawn");</script>';}
 	
 	//**************************Computer wins X = (1,2,7)***********************************
-	elseif($table[0][0] == "X" && $table[0][1] == "X" && $table[1][2] =="X" && $input4 == 8){
+	elseif($table[0][0] == "X" && $table[0][1] == "X" && $table[2][0] =="X" && $input4 == 8){
 		$table[2][1] = "X";
 		$table[1][2] = "O";
 		echo '<script>alert("Computer wins");</script>';}
-	elseif($table[0][0] == "X" && $table[0][1] == "X" && $table[1][2] =="X" && $input4 == 9){
+	elseif($table[0][0] == "X" && $table[0][1] == "X" && $table[2][0] =="X" && $input4 == 9){
 		$table[2][2] = "X";
 		$table[1][2] = "O";
 		echo '<script>alert("Computer wins");</script>';}
@@ -527,16 +527,12 @@ if(isset($_POST['submit'])&& $input3<10){
 		$table[1][2] = "X";
 		$table[1][1] = "O";
 		echo '<script>alert("Computer Wins");</script>';}
-
-elseif($input3>9) {
-	echo"Type in a valid number.";
-}
+		
 else {
-	echo"Type in a valid number.";
-}
+	echo'<script>alert("Type in a valid number");window.location.reload()"</script>';
+	}
 
-echo '<script>window.location="http://localhost/output.php"</script>';
-
+	echo '<script>window.location="http://localhost/output.php"</script>';
 }
 
 $_SESSION['table']=$table;

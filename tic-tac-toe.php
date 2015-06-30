@@ -61,7 +61,10 @@ elseif ($input1 == 9){
 $table[2][2] = "X";
 $table[1][1] = "O";
 }
+$_SESSION['table']=$table;
+
 header('location:input2.php');
+
 }
 elseif($input1>9) {
 	echo"Type in a valid number.";

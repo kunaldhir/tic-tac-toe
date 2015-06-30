@@ -527,13 +527,12 @@ if(isset($_POST['submit'])&& $input3<10){
 		$table[1][2] = "X";
 		$table[1][1] = "O";
 		echo '<script>alert("Computer Wins");</script>';}
+		$_SESSION['table']=$table;
+		header('location:output.php');
+}
 		
 else {
 	echo'<script>alert("Type in a valid number");window.location.reload()"</script>';
 	}
 
-	echo '<script>window.location="http://localhost/output.php"</script>';
-}
-
-$_SESSION['table']=$table;
 ?>

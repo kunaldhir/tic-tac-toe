@@ -755,14 +755,12 @@ if(isset($_POST['submit'])&& $input2<10){
 		$table[1][2] = "X";
 		$table[1][0] = "O";
 		echo '<script>alert("Computer wins");</script>';}
-	//************************************************************************************
+		$_SESSION['table']=$table;
+		header('location:input4.php');
+}
 
 else {
 	echo'<script>alert("Type in a valid number");window.location.reload()"</script>';
 	}
 
-	echo '<script>window.location="http://localhost/input4.php"</script>';
-}
-
-$_SESSION['table']=$table;
 ?>
